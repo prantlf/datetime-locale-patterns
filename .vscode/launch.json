@@ -1,0 +1,28 @@
+{
+  // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
+  // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
+  // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "date-locale-pattern.test",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/test/date-locale-pattern.test.js",
+      "internalConsoleOptions": "openOnSessionStart",
+      "skipFiles": [
+        "<node_internals>/**/*.js"
+      ]
+    },
+    {
+      "name": "cjs.test",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/test/cjs.test.cjs",
+      "internalConsoleOptions": "openOnSessionStart",
+      "skipFiles": [
+        "<node_internals>/**/*.js"
+      ]
+    }
+  ]
+}

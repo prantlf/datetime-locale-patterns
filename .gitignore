@@ -1,0 +1,9 @@
+.DS_Store
+coverage
+lib/*.cjs
+lib/*.json
+lib/*.map
+lib/*.min.*
+perf/size/*.bundle.*
+node_modules
+testib/*.json

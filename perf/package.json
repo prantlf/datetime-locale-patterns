@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "speed": "node speed",
+    "size": "rollup -c size/rollup.config.js && ls -hl size/*.bundle.js | awk '{ print $9 \"   \" $5 }'"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "15.0.1",
+    "benchmark": "2.1.4",
+    "date-and-time": "2.4.1",
+    "date-fns": "2.29.3",
+    "luxon": "3.2.0"
+  }
+}
