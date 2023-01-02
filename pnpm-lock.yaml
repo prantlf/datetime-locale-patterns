@@ -8,6 +8,7 @@ specifiers:
   cldr-core: 42.0.0
   cldr-dates-full: 42.0.0
   date-fns: 2.29.3
+  date-fns-tz: 1.3.7
   datetime-locale-patterns: 'link:'
   denolint: 2.0.5
   rollup: 3.9.0
@@ -28,6 +29,7 @@ devDependencies:
   c8: 7.12.0
   cldr-core: 42.0.0
   date-fns: 2.29.3
+  date-fns-tz: 1.3.7_date-fns@2.29.3
   datetime-locale-patterns: 'link:'
   denolint: 2.0.5
   rollup: 3.9.0
@@ -440,6 +442,14 @@ packages:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
+    dev: true
+
+  /date-fns-tz/1.3.7_date-fns@2.29.3:
+    resolution: {integrity: sha512-1t1b8zyJo+UI8aR+g3iqr5fkUHWpd58VBx8J/ZSQ+w7YrGlw80Ag4sA86qkfCXRBLmMc4I2US+aPMd4uKvwj5g==}
+    peerDependencies:
+      date-fns: '>=2.0.0'
+    dependencies:
+      date-fns: 2.29.3
     dev: true
 
   /date-fns/2.29.3:
