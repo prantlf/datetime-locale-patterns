@@ -23,11 +23,10 @@ export interface DateTimeOptions {
   timeStyle: PatternStyle
 }
 
-export interface IntlFormatter {
-  resolvedOptions(): Record<string, unknown>
-}
-
 export function setLocalePatterns(data: PatternData): void
-export function getDateLocalePattern(locale: IntlFormatter | string, style?: PatternStyle | DateOptions): string
-export function getTimeLocalePattern(locale: IntlFormatter | string, style?: PatternStyle | TimeOptions): string
-export function getDateTimeLocalePattern(locale: IntlFormatter | string, dateStyle?: PatternStyle | DateTimeOptions, timeStyle?: PatternStyle): string
+export function getDateLocalePattern(locale: Intl.DateTimeFormat | string,
+  style?: PatternStyle | DateOptions): string
+export function getTimeLocalePattern(locale: Intl.DateTimeFormat | string,
+  style?: PatternStyle | TimeOptions): string
+export function getDateTimeLocalePattern(locale: Intl.DateTimeFormat | string,
+  dateStyle?: PatternStyle | DateTimeOptions, timeStyle?: PatternStyle): string
