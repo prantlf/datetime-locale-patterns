@@ -263,7 +263,7 @@ Licensed under the MIT license.
 [NPM]: https://www.npmjs.com/
 [PNPM]: https://pnpm.io/
 [Yarn]: https://yarnpkg.com/
-[date-and-time]: https://github.com/knowledgecode/date-and-time#compileformatstring
+[date-and-time]: https://github.com/knowledgecode/date-and-time
 [date-fns]: https://github.com/date-fns/date-fns
 [luxon]: https://moment.github.io/luxon/
 [ICU]: https://icu.unicode.org/

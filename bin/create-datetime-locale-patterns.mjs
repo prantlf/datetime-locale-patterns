@@ -26,7 +26,7 @@ const require = createRequire(import.meta.url)
 //   "formats": ["date", "time", "dateTime"],
 //   "styles": ["short", "long"],
 //   "patterns": {
-//     "en": [["M/d/yy", "MMMM d, y"], ["h:mm a", "h:mm:ss a z"], ["{1}, {0}", "{1}, {0}"]],
+//     "en": [["M/d/yy", "MMMM d, y"], ["h:mm a", "h:mm:ss a z"], ["{1}, {0}", "{1}, {0}"]],
 //     "cs": [["dd.MM.yy", "d. MMMM y"], ["H:mm", "H:mm:ss z"], ["{1} {0}", "{1} {0}"]]
 //   }
 // }
