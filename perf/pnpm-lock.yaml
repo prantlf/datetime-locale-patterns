@@ -3,16 +3,16 @@ lockfileVersion: 5.4
 specifiers:
   '@rollup/plugin-node-resolve': 15.0.1
   benchmark: 2.1.4
-  date-and-time: 2.4.1
+  date-and-time: 2.4.3
   date-fns: 2.29.3
-  luxon: 3.2.0
+  luxon: 3.3.0
 
 devDependencies:
   '@rollup/plugin-node-resolve': 15.0.1
   benchmark: 2.1.4
-  date-and-time: 2.4.1
+  date-and-time: 2.4.3
   date-fns: 2.29.3
-  luxon: 3.2.0
+  luxon: 3.3.0
 
 packages:
 
@@ -67,8 +67,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /date-and-time/2.4.1:
-    resolution: {integrity: sha512-fG+ClATev+wHryqxOoGcTTegr5RhYE+tz/XHUkTQ/zvpWqQ90oOxjOhuMQ02bw87Oy9N3qBENCHHHSKdWJjgTg==}
+  /date-and-time/2.4.3:
+    resolution: {integrity: sha512-xkS/imTmsyEdpp9ie5oV5UWolg3XkYWNySbT2W4ESWr6v4V8YrsHbhpk9fIeQcr0NFTnYbQJLXlgU1zrLItysA==, tarball: http://artifactory.opentext.net:80/artifactory/api/npm/NPM_ORG/date-and-time/-/date-and-time-2.4.3.tgz}
     dev: true
 
   /date-fns/2.29.3:
@@ -117,8 +117,8 @@ packages:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
     dev: true
 
-  /luxon/3.2.0:
-    resolution: {integrity: sha512-Namj3XqoJjFekq/JHQEaaAv4zyE/fyyDBrMEBnIL2s/X54SC8W5Ea0uej1TRXUArWec8OojsAVsGBYhNRjpMVw==}
+  /luxon/3.3.0:
+    resolution: {integrity: sha512-An0UCfG/rSiqtAIiBPO0Y9/zAnHUZxAMiCpTd5h2smgsj7GGmcenvrvww2cqNA8/4A5ZrD1gJpHN2mIHZQF+Mg==, tarball: http://artifactory.opentext.net:80/artifactory/api/npm/NPM_ORG/luxon/-/luxon-3.3.0.tgz}
     engines: {node: '>=12'}
     dev: true
 
