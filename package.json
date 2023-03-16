@@ -1,6 +1,6 @@
 {
   "name": "datetime-locale-patterns",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provides localized date/time format patterns for styles full, long, medium and short, usable with Intl.DateTimeFormat, compliant with Unicode LDML.",
   "author": {
     "name": "Ferdinand Prantl",
