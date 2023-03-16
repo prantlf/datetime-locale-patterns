@@ -22,9 +22,11 @@ const pattern = getDateTimeLocalePattern(formatter) // d.M.yy
 * ES, CJS and UMD module exports.
 * TypeScript type declarations (typings).
 * No other dependencies.
-* Tiny code base - 1.42 kB minified, 525 B gzipped, 439 B brotlied. Bundle with all data - 95.9 kB minified, 6.44 kB gzipped, 5.17 kB brotlied
+* Tiny code base - 1.42 kB minified, 525 B gzipped, 439 B brotlied. Bundle with all data - 95.9 kB minified, 6.44 kB gzipped, 5.17 kB brotlied.
 * Generated from the official [CLDR data] version 42.0. 586 locales supported.
 * Resolves four date/time-formatting pattern styles (lengths) - `full`, `long`, `medium`, `short`.
+
+This library uses Unicode data to compute the patterns. It means that it does not need a working implementation of `Intl.DateTimeFormat`, but its size is increased by the size of the data. If you are interested in a library, which uses `Intl.DateTimeFormat` and needs no data, have look at [intl-datetimeformat-options].
 
 ## Motivation
 
@@ -118,7 +120,7 @@ This library works well with [`Intl.DateTimeFormat`] by using concepts from [Uni
 * It expects [Unicode pattern styles] (lengths) - `full`, `long`, `medium`, `short`, as `dateStyle` and `timeStyle` properties of [`Intl.DateTimeFomat` options] do, or an instance of `Intl.DateTimeFomat`.
 * It supplies date/time-formatting patterns using [date fields] from [Unicode LDML] (Locale Data Markup Language) as tokens.
 
-### getDateLocalePattern(locale, style)
+### getDateLocalePattern(locale, style?)
 
 Returns a pattern to format a date-only value for the specified locale with the specified style.
 
@@ -133,7 +135,7 @@ const pattern = getDateLocalePattern('en', 'short')
 console.log(pattern) // prints 'M/d/yy'
 ```
 
-### getTimeLocalePattern(locale, style)
+### getTimeLocalePattern(locale, style?)
 
 Returns a pattern to format a time-only value for the specified locale with the specified style.
 
@@ -148,7 +150,7 @@ const pattern = getTimeLocalePattern('en', 'short')
 console.log(pattern) // prints 'h:mm a'
 ```
 
-### getDateTimeLocalePattern(locale, dateStyle, timeStyle)
+### getDateTimeLocalePattern(locale, dateStyle?, timeStyle?)
 
 Returns a pattern to format a date+time value for the specified locale with the specified style.
 
@@ -280,3 +282,4 @@ Licensed under the MIT license.
 [Unicode calendar formats]: https://unicode.org/reports/tr35/tr35-dates.html#2-calendar-elements
 [date fields]: http://unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table
 [`Intl.DateTimeFomat` options]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#options
+[intl-datetimeformat-options]: https://github.com/prantlf/intl-datetimeformat-options
