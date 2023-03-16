@@ -5,7 +5,7 @@ on:
   - pull_request
 
 jobs:
-  tets-or-release:
+  test-or-release:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Sources
