@@ -28,6 +28,13 @@ const pattern = getDateTimeLocalePattern(formatter) // d.M.yy
 
 This library uses Unicode data to compute the patterns. It means that it does not need a working implementation of `Intl.DateTimeFormat`, but its size is increased by the size of the data. If you are interested in a library, which uses `Intl.DateTimeFormat` and needs no data, have look at [intl-datetimeformat-options].
 
+Related projects:
+
+* [date-and-time-formatter] - formats a date/time value to a localised string using a pattern consisting of [Unicode LDML] tokens.
+* [datetime-placeholder] - simplifies a date/time-formatting pattern using [Unicode LDML] tokens to a pattern usable in date/time pickers.
+* [intl-datetimeformat-options] - provides localized date/time format patterns for styles `full`, `long`, `medium` and `short`, using [`Intl.DateTimeFormat`].
+* [intl-datetimeformat-pattern] - creates a valid [`Intl.DateTimeFormat`] options object from a [Unicode CLDR] skeleton or token pattern.
+
 ## Motivation
 
 When do you need to know the date/time format pattern? When is just formatting a date or time values to a string not enough?
@@ -282,4 +289,7 @@ Licensed under the MIT license.
 [Unicode calendar formats]: https://unicode.org/reports/tr35/tr35-dates.html#2-calendar-elements
 [date fields]: http://unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table
 [`Intl.DateTimeFomat` options]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#options
+[date-and-time-formatter]: https://github.com/prantlf/date-and-time-formatter
+[datetime-placeholder]: https://github.com/prantlf/datetime-placeholder
+[intl-datetimeformat-pattern]: https://github.com/caridy/intl-datetimeformat-pattern
 [intl-datetimeformat-options]: https://github.com/prantlf/intl-datetimeformat-options
