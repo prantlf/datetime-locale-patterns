@@ -8,11 +8,10 @@
 
 Provides localized date/time format patterns for styles `full`, `long`, `medium` and `short`, usable with [`Intl.DateTimeFormat`], compliant with [Unicode LDML]. For example:
 
-| Locale | Style | Pattern | Example |
-|:-------|:------|:--------|:--------|
-| en     | short | M/d/yy, h:mm a | 2/3/01, 4:05 AM |
+| Locale | Style | Pattern             | Example                     |
+|:-------|:------|:--------------------|:----------------------------|
+| en     | short | M/d/yy, h:mm a      | 2/3/01, 4:05 AM             |
 | cs     | long  | d. MMMM y H:mm:ss z | 3. února 1901 4:05:06 GMT+1 |
-
 
 ```js
 const formatter = new Intl.DateTimeFormat('cs', { dateStyle: 'short'})
@@ -22,7 +21,7 @@ const pattern = getDateTimeLocalePattern(formatter) // d.M.yy
 * ES, CJS and UMD module exports.
 * TypeScript type declarations (typings).
 * No other dependencies.
-* Tiny code base - 1.42 kB minified, 525 B gzipped, 439 B brotlied. Bundle with all data - 95.9 kB minified, 6.44 kB gzipped, 5.17 kB brotlied.
+* Tiny code base - 1.32 kB minified, 586 B gzipped, 506 B brotlied. Bundle with all data - 115 kB minified, 7.27 kB gzipped, 5.83 kB brotlied.
 * Generated from the official [CLDR data] version 44.0.1. 710 locales supported.
 * Resolves four date/time-formatting pattern styles (lengths) - `full`, `long`, `medium`, `short`.
 
