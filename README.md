@@ -23,7 +23,7 @@ const pattern = getDateTimeLocalePattern(formatter) // d.M.yy
 * TypeScript type declarations (typings).
 * No other dependencies.
 * Tiny code base - 1.42 kB minified, 525 B gzipped, 439 B brotlied. Bundle with all data - 95.9 kB minified, 6.44 kB gzipped, 5.17 kB brotlied.
-* Generated from the official [CLDR data] version 42.0. 586 locales supported.
+* Generated from the official [CLDR data] version 44.0.1. 710 locales supported.
 * Resolves four date/time-formatting pattern styles (lengths) - `full`, `long`, `medium`, `short`.
 
 This library uses Unicode data to compute the patterns. It means that it does not need a working implementation of `Intl.DateTimeFormat`, but its size is increased by the size of the data. If you are interested in a library, which uses `Intl.DateTimeFormat` and needs no data, have look at [intl-datetimeformat-options].
